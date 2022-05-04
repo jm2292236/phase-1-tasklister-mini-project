@@ -3,26 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Flatiron Task Lister</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div id="main-content">
-    <h1>Task Lister Lite™️</h1>
+      <header>
+          <h1>Task Lister Lite™️</h1>
+      </header>
 
-    <form id="create-task-form" action="" method="POST">
-      <label for="new-task-description">Task description:</label>
-      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
-    </form>
+      <form id="create-task-form" action="" method="POST">
+        <label for="new-task-description">Task description:</label>
+        <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+        <input type="submit" value="Create New Task">
+      </form>
 
-    <div id="list">
-      <h2>My Todos:</h2>
-      <ul id="tasks">
-      </ul>
+      <div class="select">
+          <select name="filter" class="filter-todo">
+              <option value="all">All</option>
+              <option value="completed">Completed</option>
+              <option value="uncompleted">Uncompleted</option>
+          </select>
+      </div>
+
+      <div id="todo-container">
+          <ul id="todo-list">
+          </ul>
+      </div>
+
+      <script src="./src/index.js"></script>
     </div>
-
-    <script src="./src/index.js"></script>
-  </div>
 
 </body>
 </html>
