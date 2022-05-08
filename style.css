@@ -48,10 +48,6 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* remove */
-    border: solid;
-    border-color: green;
 }
 
 .todo {
@@ -132,9 +128,4 @@ form {
 
 select {
     width: 100%;
-}
-
-/* Remove later, only for learning purposes */
-.todo, li, .select {
-    border: solid;
 }
